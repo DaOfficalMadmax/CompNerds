@@ -1,0 +1,121 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 90px;
+    font-stretch: extra-expanded;
+}
+
+.intro-text {
+    color: white;
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.intro {
+    height: 600px;
+    background-image: url(img/layered-steps-haikei.svg);
+    background-size: auto;
+    background-position: 0 0;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.intro-button {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    padding: 10px 10px;
+    border: solid white 4px;
+    border-radius: 10px;
+}
+
+.intro-button:hover {
+    color: black;
+    background-color: white;
+    transition: 300ms;
+}
+
+.css-img {
+    height: 225px;
+}
+
+.language {
+    font-family: Georgia;
+    font-size: 30px;
+}
+
+.html-button {
+    text-decoration: none;
+    font-size: 20px;
+    color: orange;
+    background-color: transparent;
+    padding: 10px 10px;
+    border: solid;
+    border-image: solid linear-gradient(to bottom right, rgb(255, 81, 0), rgb(255, 130, 57));
+    border-radius: 10px;
+}
+
+.html-button:hover {
+    color: white;
+    background-image: linear-gradient(to bottom right, rgb(255, 81, 0), rgb(255, 130, 57));
+    border: solid;
+    border-image: solid linear-gradient(to bottom right, rgb(255, 81, 0), rgb(255, 130, 57));
+    border-radius: 10px;
+    transition: 300ms;
+}
+
+.css-button {
+    text-decoration: none;
+    font-size: 20px;
+    color: blue;
+    background-color: transparent;
+    padding: 10px 10px;
+    border: solid;
+    border-image: solid linear-gradient(to bottom right, rgb(29, 13, 255), rgb(63, 99, 255));
+    border-radius: 10px;
+}
+
+.css-button:hover {
+    color: white;
+    background-image: linear-gradient(to bottom right, rgb(29, 13, 255), rgb(63, 99, 255));
+    border: solid;
+    border-image: solid linear-gradient(to bottom right, rgb(29, 13, 255), rgb(63, 99, 255));
+    border-radius: 10px;
+    transition: 300ms;
+}
+
+.js-button {
+    text-decoration: none;
+    font-size: 20px;
+    color: yellow;
+    background-color: transparent;
+    padding: 10px 10px;
+    border: solid;
+    border-image: solid linear-gradient(to bottom right, rgb(233, 255, 39), rgb(217, 255, 0));
+    border-radius: 10px;
+}
+
+.js-button:hover {
+    color: white;
+    background-image: linear-gradient(to bottom right, rgb(233, 255, 39), rgb(217, 255, 0));
+    border: solid;
+    border-image: solid linear-gradient(to bottom right, rgb(233, 255, 39), rgb(217, 255, 0));
+    border-radius: 10px;
+    transition: 300ms;
+}
+
+.language-area {
+    background-color: black;
+    color: white;
+    width: 572px;
+    height: 350px;
+    margin-right:10px;
+}

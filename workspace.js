@@ -37,8 +37,6 @@ let saveCss = document.getElementById("SaveCss");
 let JsText = document.getElementById("jsTextarea");
 let saveJs = document.getElementById("SaveJs");
 
-let fileNameEle = "HTML"
-
 saveHtml.addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -48,7 +46,7 @@ saveHtml.addEventListener("click", (e) => {
   const downloadUrl = window.URL.createObjectURL(textDataBlob)
 
   const downloadLink = document.createElement('a');
-  downloadLink.download = fileNameEle.value
+  downloadLink.download = "index"
   downloadLink.href = downloadUrl;
   downloadLink.click()
 
@@ -65,7 +63,7 @@ saveCss.addEventListener("click", (e) => {
     const downloadUrl = window.URL.createObjectURL(textDataBlob)
   
     const downloadLink = document.createElement('a');
-    downloadLink.download = fileNameEle.value
+    downloadLink.download = "style"
     downloadLink.href = downloadUrl;
     downloadLink.click()
   
@@ -82,7 +80,7 @@ saveJs.addEventListener("click", (e) => {
     const downloadUrl = window.URL.createObjectURL(textDataBlob)
   
     const downloadLink = document.createElement('a');
-    downloadLink.download = fileNameEle.value
+    downloadLink.download = "script"
     downloadLink.href = downloadUrl;
     downloadLink.click()
   

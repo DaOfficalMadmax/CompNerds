@@ -7,9 +7,8 @@
         textarea {
             background-color: black;
             color: white;
-            min-width: 32%;
+            min-width: 100%;
             height: 350px;
-            margin-right:10px;
         }
         
         iframe {
@@ -17,8 +16,17 @@
             height: 600px;
             margin-top: 20px;
         }
-        span {
-            font-size: 40px;
+        .nav-lan {
+            font-size: 20px;
+            border-left: solid grey;
+            color: grey;
+            padding-right: 20px;
+            padding-left: 20px;
+            cursor: default;
+        }
+        .nav-lan:hover{
+            color: black;
+            cursor: pointer;
         }
 
         li {
@@ -71,7 +79,7 @@
     <div class="container">
         <div class="row" style="margin-left:50px; margin-right:50px;">
             <div class="col-12">
-                <div style="text-align: center;"><span style="margin-right: 30%">HTML</span><span>CSS</span><span style="margin-left: 15%">JAVASCRIPT</span></div>
+                <div style="text-align: center; margin-bottom: 50px;"><a class="nav-lan active" onclick="ShowHtml()">HTML</a><a class="nav-lan" onclick="ShowCss()">CSS</a><a class="nav-lan" onclick="ShowJs()" style="border-right: solid grey;">JS</a></div>
                 <div id="myTabContent" class="tab-content">
 
                     <div class="tab-pane fade in active" id="html">

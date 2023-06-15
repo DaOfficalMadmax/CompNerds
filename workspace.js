@@ -87,3 +87,52 @@ saveJs.addEventListener("click", (e) => {
     console.log(textData);
     console.log(textDataBlob);
   });
+
+function ShowHtml() {
+  var HTMLtextarea = document.getElementById("htmlTextarea");
+  if (HTMLtextarea.style.display === "block") {
+      HTMLtextarea.style.display = "none";
+  } else {
+      HTMLtextarea.style.display = "block";
+  }
+}
+
+var HTMLtextarea = document.getElementById("htmlTextarea");
+var Csstextarea = document.getElementById("cssTextarea");
+var Jstextarea = document.getElementById("jsTextarea");
+
+Csstextarea.style.display = "none";
+Jstextarea.style.display = "none";
+
+function ShowHtml() {
+  if (HTMLtextarea.style.display === "block") {
+      HTMLtextarea.style.display = "none";
+  } else {
+      HTMLtextarea.style.display = "block";
+
+      Csstextarea.style.display = "none";
+      Jstextarea.style.display = "none";
+  }
+}
+
+function ShowCss() {
+  if (Csstextarea.style.display === "block") {
+      Csstextarea.style.display = "none";
+  } else {
+      Csstextarea.style.display = "block";
+
+      Jstextarea.style.display = "none";
+      HTMLtextarea.style.display = "none";
+}
+}
+
+function ShowJs() {
+  if (Jstextarea.style.display === "block") {
+      Jstextarea.style.display = "none";
+  } else {
+      Jstextarea.style.display = "block";
+
+      HTMLtextarea.style.display = "none";
+      Csstextarea.style.display = "none";
+  }
+}

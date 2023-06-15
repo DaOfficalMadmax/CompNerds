@@ -122,7 +122,7 @@ function ShowHtml() {
       cssNavigation.style.borderTop = "0px solid grey";
       jsNavigation.style.borderTop = "0px solid grey";
 
-      IFrame.style.height = "700px";
+      IFrame.style.height = "80%";
   } else {
       HTMLtextarea.style.display = "block";
 
@@ -145,7 +145,7 @@ function ShowHtml() {
       Csstextarea.style.display = "none";
       Jstextarea.style.display = "none";
 
-      IFrame.style.height = "500px";
+      IFrame.style.height = "60%";
   }
 }
 
@@ -160,7 +160,7 @@ function ShowCss() {
       htmlNavigation.style.borderTop = "0px solid grey";
       jsNavigation.style.borderTop = "0px solid grey";
 
-      IFrame.style.height = "700px";
+      IFrame.style.height = "80%";
   } else {
       Csstextarea.style.display = "block";
 
@@ -183,7 +183,7 @@ function ShowCss() {
       Jstextarea.style.display = "none";
       HTMLtextarea.style.display = "none";
 
-      IFrame.style.height = "500px";
+      IFrame.style.height = "60%";
 }
 }
 
@@ -198,7 +198,7 @@ function ShowJs() {
       htmlNavigation.style.borderTop = "0px solid grey";
       cssNavigation.style.borderTop = "0px solid grey";
 
-      IFrame.style.height = "700px";
+      IFrame.style.height = "80%";
   } else {
       Jstextarea.style.display = "block";
 
@@ -221,6 +221,6 @@ function ShowJs() {
       HTMLtextarea.style.display = "none";
       Csstextarea.style.display = "none";
 
-      IFrame.style.height = "500px";
+      IFrame.style.height = "60%";
   }
 }

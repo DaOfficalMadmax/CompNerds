@@ -97,13 +97,15 @@ function ShowHtml() {
   }
 }
 
-var HTMLtextarea = document.getElementById("htmlTextarea");
-var Csstextarea = document.getElementById("cssTextarea");
-var Jstextarea = document.getElementById("jsTextarea");
+var HTMLtextarea = document.getElementById("html");
+var Csstextarea = document.getElementById("css");
+var Jstextarea = document.getElementById("js");
 
 var htmlNavigation = document.getElementById("nav-html");
 var cssNavigation = document.getElementById("nav-css");
 var jsNavigation = document.getElementById("nav-js");
+
+var IFrame = document.getElementById("iFrame");
 
 htmlNavigation.style.color = "black";
 Csstextarea.style.display = "none";
@@ -113,6 +115,14 @@ function ShowHtml() {
   if (HTMLtextarea.style.display === "block") {
       HTMLtextarea.style.display = "none";
       htmlNavigation.style.color = "grey";
+      htmlNavigation.style.borderTop = "0px solid grey";
+      htmlNavigation.style.borderRight = "solid grey";
+      htmlNavigation.style.borderLeft = "solid grey";
+
+      cssNavigation.style.borderTop = "0px solid grey";
+      jsNavigation.style.borderTop = "0px solid grey";
+
+      IFrame.style.height = "700px";
   } else {
       HTMLtextarea.style.display = "block";
 
@@ -120,8 +130,22 @@ function ShowHtml() {
       cssNavigation.style.color = "grey";
       jsNavigation.style.color = "grey";
 
+      cssNavigation.style.borderTop = "solid grey";
+      cssNavigation.style.borderRight = "solid grey";
+      cssNavigation.style.borderLeft = "solid grey";
+
+      jsNavigation.style.borderTop = "solid grey";
+      jsNavigation.style.borderRight = "solid grey";
+      jsNavigation.style.borderLeft = "solid grey";
+
+      htmlNavigation.style.borderTop = "solid black";
+      htmlNavigation.style.borderRight = "solid black";
+      htmlNavigation.style.borderLeft = "solid black";
+
       Csstextarea.style.display = "none";
       Jstextarea.style.display = "none";
+
+      IFrame.style.height = "500px";
   }
 }
 
@@ -129,6 +153,14 @@ function ShowCss() {
   if (Csstextarea.style.display === "block") {
       Csstextarea.style.display = "none";
       cssNavigation.style.color = "grey";
+      cssNavigation.style.borderTop = "0px solid grey";
+      cssNavigation.style.borderRight = "solid grey";
+      cssNavigation.style.borderLeft = "solid grey";
+
+      htmlNavigation.style.borderTop = "0px solid grey";
+      jsNavigation.style.borderTop = "0px solid grey";
+
+      IFrame.style.height = "700px";
   } else {
       Csstextarea.style.display = "block";
 
@@ -136,8 +168,22 @@ function ShowCss() {
       cssNavigation.style.color = "black";
       jsNavigation.style.color = "grey";
 
+      cssNavigation.style.borderTop = "solid black";
+      cssNavigation.style.borderRight = "solid black";
+      cssNavigation.style.borderLeft = "solid black";
+
+      jsNavigation.style.borderTop = "solid grey";
+      jsNavigation.style.borderRight = "solid grey";
+      jsNavigation.style.borderLeft = "solid grey";
+
+      htmlNavigation.style.borderTop = "solid grey";
+      htmlNavigation.style.borderRight = "solid grey";
+      htmlNavigation.style.borderLeft = "solid grey";
+
       Jstextarea.style.display = "none";
       HTMLtextarea.style.display = "none";
+
+      IFrame.style.height = "500px";
 }
 }
 
@@ -145,6 +191,14 @@ function ShowJs() {
   if (Jstextarea.style.display === "block") {
       Jstextarea.style.display = "none";
       jsNavigation.style.color = "grey";
+      jsNavigation.style.borderTop = "0px solid grey";
+      jsNavigation.style.borderRight = "solid grey";
+      jsNavigation.style.borderLeft = "solid grey";
+
+      htmlNavigation.style.borderTop = "0px solid grey";
+      cssNavigation.style.borderTop = "0px solid grey";
+
+      IFrame.style.height = "700px";
   } else {
       Jstextarea.style.display = "block";
 
@@ -152,7 +206,21 @@ function ShowJs() {
       cssNavigation.style.color = "grey";
       jsNavigation.style.color = "black";
 
+      cssNavigation.style.borderTop = "solid grey";
+      cssNavigation.style.borderRight = "solid grey";
+      cssNavigation.style.borderLeft = "solid grey";
+
+      jsNavigation.style.borderTop = "solid black";
+      jsNavigation.style.borderRight = "solid black";
+      jsNavigation.style.borderLeft = "solid black";
+
+      htmlNavigation.style.borderTop = "solid grey";
+      htmlNavigation.style.borderRight = "solid grey";
+      htmlNavigation.style.borderLeft = "solid grey";
+
       HTMLtextarea.style.display = "none";
       Csstextarea.style.display = "none";
+
+      IFrame.style.height = "500px";
   }
 }

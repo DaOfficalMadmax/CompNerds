@@ -4,25 +4,26 @@
 
 <body>
     <style>
-        textarea {
-            background-color: black;
-            color: white;
-            min-width: 100%;
-            height: 350px;
-        }
         
         iframe {
             width: 100%;
-            height: 600px;
+            height: 500px;
             margin-top: 20px;
         }
         .nav-lan {
             font-size: 20px;
             border-left: solid grey;
+            border-right: solid grey;
+            border-top: solid grey;
+            margin: 10px;
             color: grey;
             padding-right: 20px;
             padding-left: 20px;
             cursor: default;
+
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none; /* IE 10 and IE 11 */
+            user-select: none; /* Standard syntax */
         }
         .nav-lan:hover{
             color: black;
@@ -63,33 +64,72 @@
         li a:hover {
         background-color: #111;
         }
+
+        /* Style the textarea */
+        #htmlTextarea, #cssTextarea, #jsTextarea {
+        /* Both elements need the same text and space styling so they are directly on top of each other */
+        border: 0;
+        width: 100%;
+        height: 150px;
+        font-size: 10pt;
+        font-family: monospace;
+        line-height: 1.5;
+        tab-size: 2;
+        z-index: 1;
+        resize: none;
+        overflow: auto;
+        white-space: nowrap;
+        border: solid black;
+        color: black;
+        background: transparent;
+        caret-color: black; 
+        }
+
+        #html, #css, #js {
+            text-align: center;
+        }
+
+        button {
+            background: transparent;
+            padding: 10px;
+            border: 2px solid grey;
+            color: grey;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            border: 2px solid black;
+            color: black;
+        }
     </style>
 
     <ul style="margin-bottom: 50px;">
         <li><a href="index.html">Home</a></li>
-        <li><a onclick="javascript:eraseText();">Clear</a></li>
         <li><a href="mailto:michael.kramar.06@gmail.com">Contact</a></li>
 
         <li style="float:right"><a id="SaveJs">SAVE JS</a></li>
         <li style="float:right"><a id="SaveCss">SAVE CSS</a></li>
         <li style="float:right"><a id="SaveHtml">SAVE HTML</a></li>
-
+        <li style="float:right"><a onclick="javascript:eraseText();">Clear</a></li>
     </ul>
 
     <div class="container">
         <div class="row" style="margin-left:50px; margin-right:50px;">
             <div class="col-12">
-                <div style="text-align: center; margin-bottom: 50px;"><a class="nav-lan active" id="nav-html" onclick="ShowHtml()">HTML</a><a class="nav-lan" id="nav-css" onclick="ShowCss()">CSS</a><a class="nav-lan" id="nav-js" onclick="ShowJs()" style="border-right: solid grey;">JS</a></div>
+                <div><a class="nav-lan active" style="border-top: solid black; border-left: solid black; border-right: solid black;" id="nav-html" onclick="ShowHtml()">HTML</a><a class="nav-lan" id="nav-css" onclick="ShowCss()">CSS</a><a class="nav-lan" id="nav-js" onclick="ShowJs()" style="border-right: solid grey;">JS</a></div>
                 <div id="myTabContent" class="tab-content">
 
                     <div class="tab-pane fade in active" id="html">
-                        <textarea id="htmlTextarea" name="htmltextarea"></textarea>   
+                        <!-- <button id="SaveHtml">SAVE HTML</button> -->
+                        <textarea id="htmlTextarea" placeholder="Enter HTML Source Code..." name="htmltextarea"></textarea>   
                     </div>
                     <div class="tab-pane fade" id="css">
-                        <textarea id="cssTextarea" name="csstextarea"></textarea>
+                        <!-- <button id="SaveCss">SAVE CSS</button> -->
+                        <textarea id="cssTextarea" placeholder="Enter CSS Source Code..." name="csstextarea"></textarea>
                     </div>
                     <div class="tab-pane fade" id="js">
-                        <textarea id="jsTextarea" name="jstextarea"></textarea>  
+                        <!-- <button id="SaveJs">SAVE JS</button> -->
+                        <textarea id="jsTextarea" placeholder="Enter JS Source Code..." name="jstextarea"></textarea>  
                     </div>
         
                 </div>

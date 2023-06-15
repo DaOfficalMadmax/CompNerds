@@ -112,6 +112,7 @@ Jstextarea.style.display = "none";
 function ShowHtml() {
   if (HTMLtextarea.style.display === "block") {
       HTMLtextarea.style.display = "none";
+      htmlNavigation.style.color = "grey";
   } else {
       HTMLtextarea.style.display = "block";
 
@@ -127,6 +128,7 @@ function ShowHtml() {
 function ShowCss() {
   if (Csstextarea.style.display === "block") {
       Csstextarea.style.display = "none";
+      cssNavigation.style.color = "grey";
   } else {
       Csstextarea.style.display = "block";
 
@@ -142,6 +144,7 @@ function ShowCss() {
 function ShowJs() {
   if (Jstextarea.style.display === "block") {
       Jstextarea.style.display = "none";
+      jsNavigation.style.color = "grey";
   } else {
       Jstextarea.style.display = "block";
 

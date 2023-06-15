@@ -101,14 +101,24 @@ var HTMLtextarea = document.getElementById("htmlTextarea");
 var Csstextarea = document.getElementById("cssTextarea");
 var Jstextarea = document.getElementById("jsTextarea");
 
+var htmlNavigation = document.getElementById("nav-html");
+var cssNavigation = document.getElementById("nav-css");
+var jsNavigation = document.getElementById("nav-js");
+
+htmlNavigation.style.color = "black";
 Csstextarea.style.display = "none";
 Jstextarea.style.display = "none";
 
 function ShowHtml() {
   if (HTMLtextarea.style.display === "block") {
       HTMLtextarea.style.display = "none";
+      htmlNavigation.style.color = "grey";
   } else {
       HTMLtextarea.style.display = "block";
+
+      htmlNavigation.style.color = "black";
+      cssNavigation.style.color = "grey";
+      jsNavigation.style.color = "grey";
 
       Csstextarea.style.display = "none";
       Jstextarea.style.display = "none";
@@ -118,8 +128,13 @@ function ShowHtml() {
 function ShowCss() {
   if (Csstextarea.style.display === "block") {
       Csstextarea.style.display = "none";
+      cssNavigation.style.color = "grey";
   } else {
       Csstextarea.style.display = "block";
+
+      htmlNavigation.style.color = "grey";
+      cssNavigation.style.color = "black";
+      jsNavigation.style.color = "grey";
 
       Jstextarea.style.display = "none";
       HTMLtextarea.style.display = "none";
@@ -129,8 +144,13 @@ function ShowCss() {
 function ShowJs() {
   if (Jstextarea.style.display === "block") {
       Jstextarea.style.display = "none";
+      jsNavigation.style.color = "grey";
   } else {
       Jstextarea.style.display = "block";
+
+      htmlNavigation.style.color = "grey";
+      cssNavigation.style.color = "grey";
+      jsNavigation.style.color = "black";
 
       HTMLtextarea.style.display = "none";
       Csstextarea.style.display = "none";

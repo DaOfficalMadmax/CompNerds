@@ -141,3 +141,109 @@ h1 {
 .feature-list {
     list-style-type: none;
 }
+
+/* Typewriter effect 1 */
+@keyframes typing {
+    0%, 28.5% { content: ""; }
+    2%, 28% { content: "d"; }
+    4%, 27.5% { content: "de"; }
+    6%, 27% { content: "dev"; }
+    8%, 26.6% { content: "deve"; }
+    10%, 26% { content: "devel"; }
+    12%, 25.5% { content: "develo"; }
+    14%, 25% { content: "develop"; }
+    16%, 24.5% { content: "develope"; }
+    18%, 24% { content: "developer"; }
+  
+    30%, 56% { content: ""; }
+    32%, 55.5% { content: "d"; }
+    34%, 55% { content: "de"; }
+    36%, 54.5% { content: "des"; }
+    38%, 54% { content: "desi"; }
+    40%, 53.5% { content: "desig"; }
+    42%, 53% { content: "design"; }
+    44%, 52.5% { content: "designe"; }
+    46%, 52% { content: "designer"; }
+
+    57.5%, 79.5% { content: ""; }
+    59%, 79% { content: "d"; }
+    60.5%, 78.5% { content: "de"; }
+    62%, 78% { content: "dev"; }
+    63.5%, 77.5% { content: "deve"; }
+    65%, 77% { content: "devel"; }
+    66.5%, 76.5% { content: "develo"; }
+    68%, 76% { content: "develop"; }
+    69.5%, 75.5% { content: "develope"; }
+    71%, 75% { content: "developer"; }
+
+    81%, 99% { content: ""; }
+    82.5%, 98.5% { content: "d"; }
+    84%, 98% { content: "de"; }
+    85.5%, 97.5% { content: "des"; }
+    87%, 97% { content: "desi"; }
+    88.5%, 96.5% { content: "desig"; }
+    90%, 96% { content: "design"; }
+    91.5%, 95.5% { content: "designe"; }
+    93%, 95% { content: "designer"; }
+
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .typewriter {
+    --caret: currentcolor;
+  }
+  
+  .typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+  }
+  
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+  }
+  
+  
+  @media (prefers-reduced-motion) {
+    .typewriter::after {
+      animation: none;
+    }
+    
+    @keyframes sequencePopup {
+      0%, 100% { content: "developer"; }
+      25% { content: "writer"; }
+      50% { content: "reader"; }
+      75% { content: "human"; }
+    }
+  
+    .typewriter::before {
+      content: "developer";
+      animation: sequencePopup 12s linear infinite;
+    }
+  }
+
+  .myFuture {
+    background-image: linear-gradient(to right, purple, pink);
+    border-radius: 20px;
+  }
+
+  .about-button {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    background-color: transparent;
+    padding: 10px 10px;
+    border: solid black 4px;
+    border-radius: 10px;
+    transition: 300ms;
+}
+
+.about-button:hover {
+    color: white;
+    background-color: black;
+}

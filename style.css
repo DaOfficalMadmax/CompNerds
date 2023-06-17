@@ -4,13 +4,13 @@ body {
 
 h1 {
     color: white;
-    font-size: 90px;
+    font-size: 4rem;
     font-stretch: extra-expanded;
 }
 
 .intro-text {
     color: white;
-    font-size: 15px;
+    font-size: 1rem;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
@@ -49,7 +49,7 @@ h1 {
 
 .language {
     font-family: Georgia;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 .html-button {
@@ -112,14 +112,6 @@ h1 {
     border-radius: 10px;
 }
 
-.language-area {
-    background-color: black;
-    color: white;
-    width: 572px;
-    height: 350px;
-    margin-right:10px;
-}
-
 .nav-link {
     color: grey;
     transition: 0.2s;
@@ -129,21 +121,21 @@ h1 {
 }
 
 .featureTitle {
-    font-size: 75px; 
+    font-size: 4rem; 
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 20px cyan, 0 0 20px pink;
-    margin-bottom: 50px;
+    margin-bottom: 2rem;
 }
 
 .featureText {
     font-family: Georgia;
-    font-size: 25px;
+    font-size: 1.2rem;
 }
 
 .featuring {
     color: white;
     text-shadow: 2px 2px 4px #000000;
-    font-size: 25px;
+    font-size: 1.2rem;
 }
 
 .feature-list {
